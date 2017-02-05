@@ -4,7 +4,7 @@
 
 # Site
 title: 闲下来
-subtitle:
+subtitle: Do or Die
 description:
 author: GLUD
 language: zh-Hans
@@ -58,7 +58,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 6
+per_page: 5
 pagination_dir: page
 
 # Extensions
@@ -77,3 +77,10 @@ duoshuo_shortname: GLUD
 
 # 多说分享服务
 duoshuo_share: true
+
+# 搜索服务
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
