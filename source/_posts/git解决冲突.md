@@ -13,3 +13,24 @@ categories: Git
 git log --graph
 ```
 通过上下方向键拉倒提交日志最低端，按`Q`键退出提交日志窗口。
+
+## github注册之后需要配置邮箱
+
+## 创建有内容的文件
+```
+echo "重写的内容" > README.md
+echo "需要追加的内容" >> README.md
+```
+
+## 本地仓库与远程仓库进行关联
+```
+git remot add 名字 地址
+```
+
+## 推送到远程仓库
+```
+-u upstream  设置之后下次推送时可以使用简写
+git push origin master -u
+简写
+git push
+```
