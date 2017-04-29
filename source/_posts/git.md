@@ -78,6 +78,10 @@ git add <文件名>
 ```
 git commit -m "更新内容描述"
 ```
+## 提交到版本库
+```
+git push
+```
 ## 查看文件所在区的提交状态
 ```
 git status
