@@ -24,12 +24,21 @@ echo "需要追加的内容" >> README.md
 
 ## 本地仓库与远程仓库进行关联
 ```
-git remot add 名字 地址
+git remote add <名字> <地址>
+```
+
+## 查看远程仓库的连接列表
+```
+git remote -v
+```
+## 删除远程仓库的连接
+```
+git remote <连接名>
 ```
 
 ## 推送到远程仓库
+-u 为upstream  设置之后下次推送时可以使用简写
 ```
--u upstream  设置之后下次推送时可以使用简写
 git push origin master -u
 简写
 git push
