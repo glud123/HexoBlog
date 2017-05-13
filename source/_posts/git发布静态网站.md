@@ -9,7 +9,7 @@ categories: Git
 - 将我们需要发布的内容推送到`gh-pages`这个分支上
 - 推送到远程仓库上即可
 - github会给你一个在线地址
-
+<!--more-->
 ## 执行步骤
 - git checkout -b gh-pages
 - touch index.html

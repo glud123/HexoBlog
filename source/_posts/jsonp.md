@@ -10,7 +10,7 @@ ajax会有限制问题，会出现不允许访问。
 jsonp,cros,postMessage(iframe),websocket;
 - jsonp:scritp 不会导致跨域问题，我的网站引用你的网站的js,img,css,不用img和css的原因是默认会被转成图片和样式，img常用作记录访问页面的次数，统计请求这样图片的次数。
 > jsonp是通过src跨域的，并且只支持get请求。
->
+<!--more-->
 > 由于src没有访问限制，可以通过src引用其他网站的数据（此网站必须通过这样的接口）
 - cros 让被访问的服务器 允许跨域即可 （需要服务端支持）
 - iftame 跨域 html5 提供的API

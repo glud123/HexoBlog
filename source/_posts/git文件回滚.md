@@ -13,7 +13,7 @@ categories: Git
 ```
 git checkout .
 ```
-
+<!--more-->
 - 拉取某一个文件
 ```
 git checkout <文件名>

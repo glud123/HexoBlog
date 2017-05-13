@@ -8,7 +8,7 @@ categories: 开发工具
 
 ## 适用情况：理论上支持所有Jetbrains产品，截止到目前所有版本都可正常激活。
 ### 1、下载下面的文件
-
+<!--more-->
 #### 链接地址：
  http://ol31uv24o.bkt.clouddn.com/IDEALicenseServer.zip
 ### 2、解压文件，找到自己的操作版本。

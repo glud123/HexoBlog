@@ -17,6 +17,7 @@ git config --global user.email <your email>
 git config list 查看配置列表
 
 ```
+<!--more-->
 ## 初始化文件夹（告诉git那个文件夹归git所管理）
 
 ```

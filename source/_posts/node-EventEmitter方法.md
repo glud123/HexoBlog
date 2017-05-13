@@ -10,7 +10,7 @@ categories: node
 - `on(enentName,listener)` 对指定事件绑定监听同 `addListener(eventName,listener)`
 
 - `once(eventName,listener)` 对指定事件仅绑定一次
-
+<!--more-->
 - `removeListener(eventName，listener)` 解除绑定监听
 
 - `removeAllListener(eventName)` 解除所有绑定的监听事件

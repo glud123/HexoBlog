@@ -12,6 +12,7 @@ git branch
 ```
 git branch <分支名>
 ```
+<!--more-->
 ## 切换分支
 ```
 git checkout <分支名>

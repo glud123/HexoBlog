@@ -12,6 +12,7 @@ categories: Git
 ```
 git log --graph
 ```
+<!--more-->
 通过上下方向键拉倒提交日志最低端，按`Q`键退出提交日志窗口。
 
 ## github注册之后需要配置邮箱
