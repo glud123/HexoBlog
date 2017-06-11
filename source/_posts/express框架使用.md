@@ -47,3 +47,47 @@ app.use('/',function(req,res,next){})
 next();//表示是否向下执行
 ```
 > 默认不写路径任何请求都能执行
+
+##　send方法
+- 不用设置类型
+- 可以传递对象，数字会转化成状态文本
+
+> 用send取代end
+
+## sendFile
+- 向客户端返回但以页面
+```
+res.sendFile(path.resolve('./index.html'))
+res.sendFile('./index.html',{root:__dirname});
+```
+
+## 静态服务中间件
+```
+app.use(express.static(路径));
+```
+## 常见的前台模板
+- ejs
+- jade
+- underscore
+- handlebar
+- smarty
+
+## 动态渲染js
+- ejs(基于HTML，可以渲染动态数据)
+- 如果安装了ejs，如果使用render，express会自动调用ejs
+```
+app.set('views','新的路径文件夹)
+app.set('view engine','html');// render 时不需要提供html后缀
+app.engine('html',require('ejs').__express);
+res.render('文件名'，渲染的对象 = 自定义对象 + res.locals);
+```
+##　ejs渲染数据
+
+```
+<%=%> 输出结果
+<%for(var i = 0;i<arr.length;i++){%>
+  <li><%=i%></li>
+<%}%>
+<%-%> 输出HTML
+<%include ejs文件%> 插入ejs文件
+```
