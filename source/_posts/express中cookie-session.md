@@ -28,7 +28,7 @@ app.use(cookieParser());
 req.cookies //可以直接获取cookie转换后的对象
 req.cookie(key,value,{domain,path,expires,maxAge,httpOnly});
 ```
-
+<!--more-->
 ## session
 ```
 npm install express-session --save

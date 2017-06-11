@@ -36,6 +36,7 @@ req.headers
 ```
 app.get('/user/:id',callback)
 ```
+<!--more-->
 
 ## 中间件
 中间件一般在路由上面写，错误中间件一般写在底部
