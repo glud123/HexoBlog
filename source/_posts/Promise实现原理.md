@@ -5,6 +5,7 @@ tags: [前端，基础]
 categories: es6
 ---
 ## Promise实现原理
+
 > Promise 是一个类，高版本浏览器已经实现了 Promise 类
 
 Promise 需要传递一个执行函数即 executor 
@@ -19,6 +20,7 @@ new Promise(function(){
 
 // => 1
 ```
+
 <!-- more -->
 
 executor 包含两个参数，分别是 resolve (解决)、 reject (拒绝) 
@@ -46,9 +48,7 @@ p.then(function(data){
 
 // => ‘err’
 ```
-
-### 以下是 Promise 基本功能实现
-
+### 以下是 Promise 基本功能实现
 ```javascript
 /**
  * 
