@@ -170,6 +170,18 @@ function Promise(executor) {
  * @param {Function} onRejected 失败的回调
  */
 Promise.prototype.then = function(onFulfilled, onRejected) {
+	onFulfilled =
+		typeof onFulfilled === 'function'
+			? onFulfilled
+			: function(data) {
+					return data;
+				};
+	onRejected =
+		typeof onRejected === 'function'
+			? onRejected
+			: function(e) {
+					throw e;
+				};
 	let _this = this;
 	let promise2;
 	// 当执行函数为等待状态的时候 将 onFulfilled、onRejected 进行存储
@@ -186,7 +198,7 @@ Promise.prototype.then = function(onFulfilled, onRejected) {
 				}
 			});
 			_this.rejectCallBacks.push(function() {
-				let x = onRejected(_this.reason);
+				let x = onRejected(_this.value);
 				if (x instanceof Promise) {
 					x.then(resolve, reject);
 				} else {
@@ -198,26 +210,39 @@ Promise.prototype.then = function(onFulfilled, onRejected) {
 	// 当执行函数状态为 resloved 时 执行成功回调函数
 	if (_this.status === 'resloved') {
 		return (promise2 = new Promise(function(resolve, reject) {
-			let x = onFulfilled(_this.value);
-			// 判断成功的回调执行结果是否为 Promise 函数，如果是执行新的 Promise 实例 then 方法，如果不是直接执行 Promise 中成功的方法
-			if (x instanceof Promise) {
-				x.then(resolve, reject);
-			} else {
-				resolve(x);
+			try {
+				let x = onFulfilled(_this.value);
+				// 判断成功的回调执行结果是否为 Promise 函数，如果是执行新的 Promise 实例 then 方法，如果不是直接执行 Promise 中成功的方法
+				if (x instanceof Promise) {
+					x.then(resolve, reject);
+				} else {
+					resolve(x);
+				}
+			} catch (e) {
+				reject(e);
 			}
 		}));
 	}
 	// 当执行函数状态为 rejected 时 执行失败回调函数
 	if (_this.status === 'rejected') {
 		return (promise2 = new Promise(function(resolve, reject) {
-			let x = onRejected(_this.reason);
-			if (x instanceof Promise) {
-				x.then(resolve, reject);
-			} else {
-				resolve(x);
+			try {
+				let x = onRejected(_this.value);
+				if (x instanceof Promise) {
+					x.then(resolve, reject);
+				} else {
+					resolve(x);
+				}
+			} catch (e) {
+				reject(e);
 			}
 		}));
 	}
 };
+// 最终的异常抛出在 Promise 类中添加 catch 方法
+Promise.prototype.catch = function(func) {
+	return this.then(null, func);
+};
+
 ```
 
