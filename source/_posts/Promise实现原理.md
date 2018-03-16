@@ -186,7 +186,7 @@ Promise.prototype.then = function(onFulfilled, onRejected) {
 				}
 			});
 			_this.rejectCallBacks.push(function() {
-				let x = onRejected(_this.value);
+				let x = onRejected(_this.reason);
 				if (x instanceof Promise) {
 					x.then(resolve, reject);
 				} else {
@@ -210,7 +210,7 @@ Promise.prototype.then = function(onFulfilled, onRejected) {
 	// 当执行函数状态为 rejected 时 执行失败回调函数
 	if (_this.status === 'rejected') {
 		return (promise2 = new Promise(function(resolve, reject) {
-			let x = onRejected(_this.value);
+			let x = onRejected(_this.reason);
 			if (x instanceof Promise) {
 				x.then(resolve, reject);
 			} else {
