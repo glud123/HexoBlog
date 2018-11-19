@@ -22,7 +22,7 @@ categories: 工具
 
 **报错如下：**
 
-![image](https://mdstatic.netlify.com/blog/%E5%AE%89%E8%A3%85brew%E6%8A%A5%E9%94%99-Command%20Line%20Tools%20\(macOS%20Mojave%20version%2010.14\).png)
+<image src="https://mdstatic.netlify.com/blog/%E5%AE%89%E8%A3%85brew%E6%8A%A5%E9%94%99-Command%20Line%20Tools%20(macOS%20Mojave%20version%2010.14).png" />
 
 **解决办法：**
 
