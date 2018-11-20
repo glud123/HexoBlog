@@ -37,6 +37,10 @@ git clone -b beta https://github.com/flutter/flutter.git
 
 1.打开 `.bash_profile` 文件，此文件可以在 `$HOME` 下进行查找
 
+```
+vi $HOME/.bash_profile
+```
+
 2.在 `.bash_profile` （没有则创建）添加
 
 ```
