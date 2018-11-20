@@ -1,7 +1,7 @@
 ---
 title: Homebrew安装
 date: 2018-11-19 10:33:42
-tags: [macOS,mojove,brew]
+tags: [macOS,Mojove,brew]
 categories: 工具
 ---
 ## Homebrew安装
@@ -16,13 +16,13 @@ categories: 工具
 
 ## 疑难问题
 
-**macOS 更新到 mojove 安装 Homebrew 时，你会发现按着以上的操作安装不成功**
+**macOS 更新到 Mojove 安装 Homebrew 时，你会发现按着以上的操作安装不成功**
 
 <!-- more -->
 
 **报错如下：**
 
-<image src="https://mdstatic.netlify.com/blog/%E5%AE%89%E8%A3%85brew%E6%8A%A5%E9%94%99-Command%20Line%20Tools%20(macOS%20Mojave%20version%2010.14).png" />
+<image src="https://mdstatic.netlify.com/blog/brew安装1.png" />
 
 **解决办法：**
 
@@ -32,4 +32,4 @@ categories: 工具
 
 > 以上链接如果失效请尝试登录 [苹果开发者网站](https://developer.apple.com/download/more/) 进行下载
 
-![image](https://mdstatic.netlify.com/blog/developer网站.png)
+![image](https://mdstatic.netlify.com/blog/brew安装2.png)
