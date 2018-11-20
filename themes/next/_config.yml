@@ -6,7 +6,7 @@
 favicon: /images/logo.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "前端笔记, 学习总结, 项目总结"
+keywords: "前端笔记, 学习总结, 项目总结, flutter, react"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,7 @@ keywords: "前端笔记, 学习总结, 项目总结"
 rss:
 
 # Specify the date when the site was setup
-since: 2017
+since: 2016
 
 # icon between year and author @Footer
 authoricon: heart
@@ -28,7 +28,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -70,9 +70,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
-scheme: Pisces
+# scheme: Pisces
 
 
 # ---------------------------------------------------------------
