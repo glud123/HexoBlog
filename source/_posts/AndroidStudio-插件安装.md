@@ -12,6 +12,8 @@ categories: 开发工具
 
 ![image](https://mdstatic.netlify.com/blog/AndroidStudio插件安装1.png)
 
+<!-- more -->
+
 #### 选择 Plugins
 
 ![image](https://mdstatic.netlify.com/blog/AndroidStudio插件安装2.png)

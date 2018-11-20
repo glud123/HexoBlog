@@ -31,6 +31,8 @@ git clone -b beta https://github.com/flutter/flutter.git
 
 当然为了开发方便还是推荐设置全局的 Flutter 环境变量
 
+<!-- more -->
+
 ### 设置 Flutter 为全局环境变量
 
 1.打开 `.bash_profile` 文件，此文件可以在 `$HOME` 下进行查找
@@ -97,9 +99,11 @@ flutter doctor
 
 **[√]** Android Studio 需要安装 Dart 和 Flutter 的插件
 
-具体安装方式请查看 **[AndroidStudio-插件安装](https://glud.netlify.com/2018/11/19/brew%E5%AE%89%E8%A3%85/#more)**
+具体安装方式请查看 **[AndroidStudio-插件安装](https://glud.netlify.com/2018/11/20/androidstudio-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/)**
 
 ### 最后
+
+恭喜你已经成功安装 Flutter 😊
 
 ![image](https://mdstatic.netlify.com/blog/flutter环境搭建2.png)
 
