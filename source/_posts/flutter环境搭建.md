@@ -47,7 +47,7 @@ export PATH=$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin
 
 ### 设置 Flutter 国内镜像
 
-由于在国内访问Flutter有时可能会受到限制，Flutter 官方为中国开发者搭建了临时镜像，我们可以将如下环境变量加入到用户环境变量中（即上一个条目提到的 `.bash_profile` 文件中）
+由于在国内访问 Flutter 有时可能会受到限制，Flutter 官方为中国开发者搭建了临时镜像，我们可以将如下环境变量加入到用户环境变量中（即上一个条目提到的 `.bash_profile` 文件中）
 
 ```
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
@@ -78,7 +78,7 @@ flutter doctor
 
 - `libimobiledevice` 和 `ideviceinstaller` 没有安装
     
-    逐条运行一下命令（下载耗时，大家请耐心等待！）
+    逐条运行以下命令（下载耗时，大家请耐心等待！）
 
     ```
     brew update
@@ -95,7 +95,7 @@ flutter doctor
     brew install ios-deploy
     ```
 
-- 使用 Brew 来安装 iOS 的开发工具 （这是因为我在截图时还没有安装 Brew 😓）
+- 使用 Brew 来安装 iOS 的开发工具 （这是因为我在截图时还没有[安装 Brew](https://glud.netlify.com/2018/11/19/brew%E5%AE%89%E8%A3%85/#more) 😓）
 
 **[✔️]** Android Studio 需要安装 Dart 和 Flutter 的插件
 
