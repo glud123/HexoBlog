@@ -2,7 +2,7 @@
 title: Flutter环境搭建
 date: 2018-11-20 15:39:43
 tags: [Flutter,环境搭建]
-categories: flutter
+categories: Flutter
 ---
 ## Flutter环境搭建
 
