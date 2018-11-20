@@ -1,6 +1,6 @@
 ---
 title: AndroidStudio-插件安装
-date: 2018-11-20 18:47:03
+date: 2018-11-19 18:47:03
 tags: [AndroidStudio,Flutter,开发工具]
 categories: 开发工具
 ---
