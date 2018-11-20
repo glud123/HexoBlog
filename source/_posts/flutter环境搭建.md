@@ -1,6 +1,6 @@
 ---
 title: Flutter环境搭建
-date: 2018-11-19 15:39:43
+date: 2018-11-20 15:39:43
 tags: [Flutter,环境搭建]
 categories: flutter
 ---
@@ -97,7 +97,7 @@ flutter doctor
 
 - 使用 Brew 来安装 iOS 的开发工具 （这是因为我在截图时还没有安装 Brew 😓）
 
-**[√]** Android Studio 需要安装 Dart 和 Flutter 的插件
+**[✔️]** Android Studio 需要安装 Dart 和 Flutter 的插件
 
 具体安装方式请查看 **[AndroidStudio-插件安装](https://glud.netlify.com/2018/11/20/androidstudio-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/)**
 
