@@ -7,6 +7,7 @@
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
+  <meta name="google-site-verification" content="_pHeNlM1Me5006BmUSgHxaB0BK1wlLaYdtLXr2hB8J0" />
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
 </head>
