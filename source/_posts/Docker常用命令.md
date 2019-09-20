@@ -264,16 +264,3 @@ Options:
   -i, --input string   Read from tar archive file, instead of STDIN
   -q, --quiet          Suppress the load output
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
