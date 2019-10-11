@@ -10,8 +10,8 @@ categories: Flutter
 
 ### 系统要求
 
-    操作系统：macOS（64-bit）
-    磁盘空间：700 MB（不包括 Xcode 和 Android Studio 的磁盘空间）
+操作系统：macOS（64-bit）
+磁盘空间：700 MB（不包括 Xcode 和 Android Studio 的磁盘空间）
 
 ### 准备
 
@@ -81,7 +81,7 @@ flutter doctor
 **[X]** iOS toolchain iOS需要的相关工具
 
 - `libimobiledevice` 和 `ideviceinstaller` 没有安装
-    
+  
     逐条运行以下命令（下载耗时，大家请耐心等待！）
 
     ```
