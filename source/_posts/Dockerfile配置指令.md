@@ -9,17 +9,17 @@ categories: Docker
 
 指令书写格式为
 
-`INSTRUCTION arguments`
+```dockerfile
+INSTRUCTION arguments
+```
 
 接下来介绍一下，Dockerfile都有哪些指令以及相关说明
 
 ### FROM
 
-
-
 指令格式
 
-```
+```dockerfile
 FROM <image> [AS <name>] #
 或者 
 FROM <image>[:<tag>] [AS <name>]

@@ -11,7 +11,7 @@ categories: Docker
 > 在新容器中运行命令（如果本地不存在当前需要运行的容器镜像，docker 会先 pull 到本地然后运行对应镜像的容器）
 
 命令格式
-```
+```shell
 docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 Options:
@@ -50,7 +50,7 @@ Options:
 ```
 <!-- more-->
 详细讲解
-```
+```shell
 # 端口暴露
 
 -P参数 // docker自动映射暴露端口
@@ -76,7 +76,7 @@ docker run -d -p 127.0.0.1:5000:5000/udp glud123/webapp // 绑定udp端口
 > 停止一个或多个正在运行的容器
 
 命令格式
-```
+```shell
 docker stop [OPTIONS] CONTAINER [CONTAINER...]
 
 Options:
@@ -87,7 +87,7 @@ Options:
 > 启动一个或多个已经停止的容器
 
 命令格式
-```
+```shell
 docker start [OPTIONS] CONTAINER [CONTAINER...]
 
 Options:
@@ -100,7 +100,7 @@ Options:
 > 重启一个或多个正在运行的容器
 
 命令格式
-```
+```shell
 docker restart [OPTIONS] CONTAINER [CONTAINER...]
 
 Options:
@@ -111,7 +111,7 @@ Options:
 > 将本地标准输入、输出和错误流附加到正在运行的容器
 
 命令格式
-```
+```shell
 docker attach [OPTIONS] CONTAINER
 
 Options:
@@ -124,7 +124,7 @@ Options:
 > 容器清单
 
 命令格式
-```
+```shell
 docker ps [OPTIONS]
 
 Options:
@@ -142,7 +142,7 @@ Options:
 > 镜像清单
 
 命令格式
-```
+```shell
 docker images [OPTIONS] [REPOSITORY[:TAG]]
 
 Options:
@@ -158,7 +158,7 @@ Options:
 > 删除一个或多个镜像
 
 命令格式
-```
+```shell
 docker rmi [OPTIONS] IMAGE [IMAGE...]
 
 Options:
@@ -170,7 +170,7 @@ Options:
 > 删除一个或多个容器（只能删除未运行的容器）
 
 命令格式
-```
+```shell
 docker rm [OPTIONS] CONTAINER [CONTAINER...] 
 
 Options:
@@ -183,7 +183,7 @@ Options:
 > 展示镜像的历史记录
 
 命令格式
-```
+```shell
 docker history [OPTIONS] IMAGE
 
 Options:
@@ -197,7 +197,7 @@ Options:
 > 从 Dockerfile 文件构建镜像
 
 命令格式
-```
+```shell
 docker build [OPTIONS] PATH | URL | -
 
 Options:
@@ -235,7 +235,7 @@ Options:
 > 将容器的文件系统导出为tar存档
 
 命令格式
-```
+```shell
 docker export [OPTIONS] CONTAINER
 
 Options:
@@ -246,7 +246,7 @@ Options:
 > 将一个或多个图像保存到tar存档（默认情况下流式传输到 STDOUT）
 
 命令格式
-```
+```shell
 docker save [OPTIONS] IMAGE [IMAGE...]
 
 Options:
@@ -257,7 +257,7 @@ Options:
 > 从 tar 存档或 STDIN 加载镜像
 
 命令格式
-```
+```shell
 docker load [OPTIONS]
 
 Options:
