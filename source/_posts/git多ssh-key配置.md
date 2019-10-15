@@ -1,11 +1,11 @@
 ---
-title: git多ssh-key配置
+title: Git多SSH-Key配置
 date: 2019-10-15 11:23:24
 tags: [git,前端笔记]
 categories: Git
 ---
 
-## git多ssh-key配置
+## Git 多 SSH-Key 配置
 
 在工作过程中可能使用多个 Git 账号，比如公司内部使用的 GitLab 和私人使用的 GitHub。
 

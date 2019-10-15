@@ -1,5 +1,5 @@
 ---
-title: git发布静态网站
+title: GitHub发布静态网站
 date: 2017-04-29 15:59:01
 tags: [git,前端笔记]
 categories: Git
