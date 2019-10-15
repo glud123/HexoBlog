@@ -33,7 +33,7 @@ categories: 规范
     - 模块使用当前模块文件夹名一样的名称
     > 如果整个文件夹是一个模块，使用 `index.js`作为入口文件，然后直接使用当前文件夹名作为模块名称
 
-    ```
+    ```javascript
     // bad
     import Footer from './Footer/index';
 
@@ -44,7 +44,7 @@ categories: 规范
 - #### 引用命名
     - 模块名使用大驼峰命名
 
-    ```javascriipt
+    ```javascript
     // bad
     import myComponent from './MyComponent';
 
@@ -52,7 +52,7 @@ categories: 规范
     import MyComponent from './MyComponent';
     ```
     - 实例使用正常驼峰命名
-    ```
+    ```jsx
     // bad
     const MyComponent = <MyComponent />;
 
@@ -63,7 +63,7 @@ categories: 规范
     - 避免使用 DOM 相关属性来用作其他用途
     > 相关属性为正常 HTML 标签属性，如 `style、id、class、href` 等
 
-    ```javascriipt
+    ```jsx
     // bad
     <MyComponent style="fancy" />
 
@@ -74,7 +74,7 @@ categories: 规范
 ### JSX 书写规范
 - #### 代码对齐
     - 遵循以下的 JSX 语法缩进格式
-    ```
+    ```jsx
     // bad
     <Foo superLongParam="bar"
          anotherSuperLongParam="baz" />
@@ -97,7 +97,7 @@ categories: 规范
     ```
 - #### 单双引号
     - 对于 JSX 属性值总是使用双引号（`"`）,其他均使用单引号（`'`）
-    ```
+    ```jsx
     // bad
     <Foo bar='bar' />
     
@@ -112,7 +112,7 @@ categories: 规范
     ```
 - #### 空格
     - 总是在自动关闭的标签前加一个空格，正常情况下不需要换行
-    ```
+    ```jsx
     // bad
     <Foo/>
     
@@ -127,7 +127,7 @@ categories: 规范
     <Foo />
     ```
     - 不要在 JSX `{}` 引用括号里两边加空格
-    ```
+    ```jsx
     // bad
     <Foo bar={ baz } />
     
@@ -137,7 +137,7 @@ categories: 规范
 
 - #### 标签
     - 对于没有子元素的标签来说总是自己关闭标签
-    ```
+    ```jsx
     // bad
     <Foo className="stuff"></Foo>
 
@@ -145,7 +145,7 @@ categories: 规范
     <Foo className="stuff" />
     ```
     - 如果模块有多行的属性，关闭标签时新建一行
-    ```
+    ```jsx
     // bad
     <Foo
         bar="bar"
@@ -252,7 +252,7 @@ categories: 规范
 - #### Refs 
     - 在 Refs 里使用回调函数
 
-    ```javascript
+    ```jsx
     // bad
     <Foo
       ref="myRef"
@@ -292,8 +292,8 @@ categories: 规范
     }
     ```
 
-
 <!--
+
 ### 测试相关
 
 - 不推荐对鼠标右键功能进行改写
