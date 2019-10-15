@@ -5,7 +5,7 @@ tags: [Docker]
 categories: Docker
 ---
 ## Docker 国内镜像设置
-> 国内镜像稳定性都差不太多，个人更青睐阿里云
+国内镜像稳定性都差不太多，个人更青睐阿里云
 
 ### 阿里云镜像 （需要注册开发者账号）
 镜像地址 [点击跳转](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)

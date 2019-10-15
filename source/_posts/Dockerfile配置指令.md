@@ -17,7 +17,7 @@ INSTRUCTION arguments
 
 ### FROM - 指定基础镜像
 
-指令格式
+**指令格式**
 
 ```dockerfile
 FROM <image> [AS <name>] 
@@ -27,7 +27,7 @@ FROM <image>[:<tag>] [AS <name>]
 FROM <image>[@<digest>] [AS <name>]
 ```
 
-指令说明
+**指令说明**
 
 FROM 指令初始化一个新的构建阶段，并为后续指令设置基本镜像。
 
@@ -37,7 +37,7 @@ Dockerfile 须从 FROM 指令开始，必须是有效的镜像。
 
 ### RUN - 构建镜像时执行的命令
 
-指令格式
+**指令格式**
 
 ```dockerfile
 RUN <command>
@@ -45,7 +45,7 @@ RUN <command>
 RUN ["executable", "param1", "param2"]
 ```
 
-指令说明
+**指令说明**
 
 前者通过 shell 终端中运行命令，后者指定其他终端运行相关参数
 
@@ -65,7 +65,7 @@ RUN ["/bin/bash","-c","echo hello"]
 
 ### CMD - 容器运行时执行的命令
 
-指令格式
+**指令格式**
 
 ```dockerfile
 CMD ["executable","param1","param2"] # 首选方式
@@ -75,7 +75,7 @@ CMD ["param1","param2"] # 作为ENTRYPOINT的默认参数
 CMD command param1 param2 # 在 /bin/sh 中执行
 ```
 
-指令说明
+**指令说明**
 
 CMD 用于指定容器启动时要执行的命令。(RUN 指令是在 build 时执行的命令，并提交为新的镜像)
 
@@ -85,13 +85,13 @@ CMD 用于指定容器启动时要执行的命令。(RUN 指令是在 build 时�
 
 ### LABEL - 为镜像添加元数据
 
-指令格式
+**指令格式**
 
 ```dockerfile
 LABEL <key>=<value> <key>=<value> <key>=<value> ...
 ```
 
-指令说明
+**指令说明**
 
 将元数据添加到镜像中，以键值对方式添加，如果 LABEL 值中包含空格，需要使用双引号`""`，如果需要换行使用反斜线`\`。
 
@@ -127,13 +127,13 @@ LABEL maintainer="SvenDowideit@home.org.au"
 
 ### EXPOSE - 与外界交互的端口
 
-指令格式
+**指令格式**
 
 ```dockerfile
 EXPOSE <port> [<port>/<protocol>...]
 ```
 
-指令说明
+**指令说明**
 
 该指令告知 Docker 容器在运行时监听指定的网络端口，默认协议类型为 TCP ,也可指定 UDP 。
 
@@ -151,7 +151,7 @@ EXPOSE 80/udp
 
 ### ENV - 环境变量
 
-指令格式
+**指令格式**
 
 ```dockerfile
 ENV <key> <value>
@@ -159,7 +159,7 @@ ENV <key> <value>
 ENV <key>=<value> ...
 ```
 
-指令说明
+**指令说明**
 
 用于指定环境变量，这些环境变量，后续可以被RUN指令使用，容器运行起来之后，也可以在容器中获取这些环境变量。
 
@@ -174,7 +174,7 @@ ENV myCat fluffy
 
 ### ADD - 将本地或者网络资源添加到镜像内
 
-指令格式
+**指令格式**
 
 ```dockerfile
 ADD [--chown=<user>:<group>] <src>... <dest>
@@ -182,7 +182,7 @@ ADD [--chown=<user>:<group>] <src>... <dest>
 ADD [--chown=<user>:<group>] ["<src>",... "<dest>"] #（此格式对于包含空格的路径是必需的）
 ```
 
-指令说明
+**指令说明**
 
 该命令将复制指定本地目录中的文件到容器中的 dest 中，src 可以是是一个绝对路径，也可以是一个URL 或一个 tar 文件，tar 文件会自动解压为目录。
 
@@ -198,7 +198,7 @@ ADD test /absoluteDir/    # 添加 "test" 到 /absoluteDir/
 
 ### COPY - 功能类似 ADD，不能自动解压文件，也不能访问网络资源
 
-指令格式
+**指令格式**
 
 ```dockerfile
 ADD [--chown=<user>:<group>] <src>... <dest>
@@ -206,13 +206,13 @@ ADD [--chown=<user>:<group>] <src>... <dest>
 ADD [--chown=<user>:<group>] ["<src>",... "<dest>"] #（此格式对于包含空格的路径是必需的）
 ```
 
-指令说明
+**指令说明**
 
 复制本地主机 src 目录或文件到容器的 desc 目录，desc 不存在时会自动创建。
 
 ### ENTRYPOINT - 容器启动时执行的命令（此处可以增加易用性优化）
 
-指令格式
+**指令格式**
 
 ```dockerfile
 ENTRYPOINT ["executable", "param1", "param2"]
@@ -220,19 +220,19 @@ ENTRYPOINT ["executable", "param1", "param2"]
 ENTRYPOINT command param1 param2
 ```
 
-指令说明
+**指令说明**
 
 用于配置容器启动后执行的命令，这些命令不能被 `docker run` 提供的参数覆盖。和 CMD 指令一样，每个 Dockerfile 中只能有一个 ENTRYPOINT ，当有多个时最后一个生效。
 
 ### VOLUME - 数据持久化
 
-指令格式
+**指令格式**
 
 ```dockerfile
 VOLUME ["/data"]
 ```
 
-指令说明
+**指令说明**
 
 作用是创建在本地主机或其他容器可以挂载的数据卷，用来存放数据。
 
@@ -250,19 +250,19 @@ VOLUME ["/data"]
 
 ### WORKDIR - 工作目录
 
-指令格式
+**指令格式**
 
 ```dockerfile
 WORKDIR /path/to/workdir
 ```
 
-指令说明
+**指令说明**
 
 为后续的 RUN CMD ENTRYPOINT 指定配置工作目录，可以使用多个 WORKDIR 指令，若后续指令用得是相对路径，则会基于之前的命令指定路径。
 
 ### USER - 指定容器运行时的用户名或 UID
 
-指令格式
+**指令格式**
 
 ```dockerfile
 USER <user>[:<group>]
@@ -270,7 +270,7 @@ USER <user>[:<group>]
 USER <UID>[:<GID>]
 ```
 
-指令说明
+**指令说明**
 
 使用 USER 指定用户后，Dockerfile 中其后的命令 RUN、CMD、ENTRYPOINT 都将使用该用户。要临时使用管理员权限可以使用 sudo。在 USER 命令之前可以使用RUN命令创建需要的用户。镜像构建完成后，通过`docker run`运行容器时，可以通过 `-u` 参数来覆盖所指定的用户。
 
@@ -284,13 +284,13 @@ USER patrick
 
 ### ARG - 构建时提供的变量
 
-指令格式
+**指令格式**
 
 ```dockerfile
 ARG <name>[=<default value>]
 ```
 
-指令说明
+**指令说明**
 
 Dockerfile 可以包含一个或多个`ARG`指令
 
@@ -305,15 +305,13 @@ ARG buildno
 
 ### ONBUILD - 镜像触发器
 
-指令格式
+**指令格式**
 
 ```dockerfile
 ONBUILD [INSTRUCTION]
 ```
 
-
-
-指令说明
+**指令说明**
 
 当所构建的镜像被用做其它镜像的基础镜像时，该镜像中的触发器将会被触发。
 

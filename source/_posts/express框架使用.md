@@ -6,7 +6,7 @@ categories: node
 ---
 ## express 是后台框架
 帮我们解决手动搭建服务，处理逻辑的复杂
-```
+```bash
 npm init -y
 npm install express --save
 ```
@@ -17,14 +17,14 @@ npm install express --save
 
 ## 路由
 根据请求的方法和请求的路径返回不同的内容
-```
+```javascript
 app.方法('路径',callback)
 app.all('*',callback)
 ```
 > 匹配路由从上到下匹配，匹配成功后不继续向下执行
 
 ## express提供的属性
-```
+```javascript
 req.path
 req.query
 req.method
@@ -33,7 +33,7 @@ req.headers
 
 ## 路径参数params
 - :id表示站位必须要有
-```
+```javascript
 app.get('/user/:id',callback)
 ```
 <!--more-->
@@ -43,7 +43,7 @@ app.get('/user/:id',callback)
 - 扩展属性和方法，请求时中间件的res和req与路由中的是同一个
 - 做权限处理，next可以决定是否向下执行
 - 中间件可以写多个，和路由在同一个数组中
-```
+```javascript
 app.use('/',function(req,res,next){})
 next();//表示是否向下执行
 ```
@@ -57,13 +57,13 @@ next();//表示是否向下执行
 
 ## sendFile
 - 向客户端返回但以页面
-```
+```javascript
 res.sendFile(path.resolve('./index.html'))
 res.sendFile('./index.html',{root:__dirname});
 ```
 
 ## 静态服务中间件
-```
+```javascript
 app.use(express.static(路径));
 ```
 ## 常见的前台模板
@@ -76,7 +76,7 @@ app.use(express.static(路径));
 ## 动态渲染js
 - ejs(基于HTML，可以渲染动态数据)
 - 如果安装了ejs，如果使用render，express会自动调用ejs
-```
+```javascript
 app.set('views','新的路径文件夹)
 app.set('view engine','html');// render 时不需要提供html后缀
 app.engine('html',require('ejs').__express);
@@ -84,7 +84,7 @@ res.render('文件名'，渲染的对象 = 自定义对象 + res.locals);
 ```
 ##　ejs渲染数据
 
-```
+```javascript
 <%=%> 输出结果
 <%for(var i = 0;i<arr.length;i++){%>
   <li><%=i%></li>

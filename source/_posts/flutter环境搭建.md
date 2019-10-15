@@ -23,7 +23,7 @@ categories: Flutter
 
 在命令行中执行以下命令进行 Flutter 安装
 
-```
+```bash
 git clone -b beta https://github.com/flutter/flutter.git
 ```
 
@@ -37,13 +37,13 @@ git clone -b beta https://github.com/flutter/flutter.git
 
 1.打开 `.bash_profile` 文件，此文件可以在 `$HOME` 下进行查找
 
-```
+```bash
 vi $HOME/.bash_profile
 ```
 
 2.在 `.bash_profile` （没有则创建）添加
 
-```
+```bash
 export PATH=$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin
 ```
 
@@ -53,7 +53,7 @@ export PATH=$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin
 
 由于在国内访问 Flutter 有时可能会受到限制，Flutter 官方为中国开发者搭建了临时镜像，我们可以将如下环境变量加入到用户环境变量中（即上一个条目提到的 `.bash_profile` 文件中）
 
-```
+```bash
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 ```
@@ -62,7 +62,7 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 设置完以上条目后，我们就可以运行 
 
-```
+```bash
 flutter doctor
 ```
 
@@ -84,7 +84,7 @@ flutter doctor
   
     逐条运行以下命令（下载耗时，大家请耐心等待！）
 
-    ```
+    ```bash
     brew update
     brew install --HEAD usbmuxd
     brew link usbmuxd
@@ -95,7 +95,7 @@ flutter doctor
 
     运行以下命令
 
-    ```
+    ```bash
     brew install ios-deploy
     ```
 

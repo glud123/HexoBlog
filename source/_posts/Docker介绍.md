@@ -24,17 +24,17 @@ categories: Docker
 
 - 基于 `Dockerfile` 文件进行创建
 
-  > 按着 `Dockerfile` 的格式及规范编写 `Dockerfile` 文件，之后通过 `docker build` 命令创建新的镜像。
-  >
-  > Docker 服务通过 `docker build`命令读取 `Dockerfile`配置项，并进行镜像的创建。
+  按着 `Dockerfile` 的格式及规范编写 `Dockerfile` 文件，之后通过 `docker build` 命令创建新的镜像。
+  
+  Docker 服务通过 `docker build`命令读取 `Dockerfile`配置项，并进行镜像的创建。
 
 - 基于已有容器的镜像进行创建
 
-  > 在已有容器的基础上进行修改后通过 `docker commit` 命令创建新的镜像。
+  在已有容器的基础上进行修改后通过 `docker commit` 命令创建新的镜像。
 
 - 基于本地 Docker 模版创建
 
-  > 例如通过 OpenVZ 提供的模板创建，OpenVZ 提供模版的[下载地址](https://wiki.openvz.org/Download/template/precreated)
+  例如通过 OpenVZ 提供的模板创建，OpenVZ 提供模版的[下载地址](https://wiki.openvz.org/Download/template/precreated)
 
 ### 容器（container）
 

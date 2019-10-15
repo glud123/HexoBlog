@@ -6,7 +6,7 @@ categories: node
 ---
 ## body-parser
 解析请求体的会将请求的数据挂载在req.body上
-```
+```bash
 npm install body-parser --save
 let bodyParser = require('body-parser');
 app.use(bodyParser.json());//解析json
@@ -14,14 +14,14 @@ app.use(bodyParser.urlencoded({extended:false}));//解析formData的格式
 ```
 
 ## querystring的核心模块
-```
+```bash
 let querystring = require('querystring');
 querystring.parse('name=1&age=2','&','=');
 querystring.stringify({name:1,age:2},'&&','=');
 ```
 
 ## cookie
-```
+```bash
 npm install cookie-parser --save
 let cookieParser = require('cookie-parser');
 app.use(cookieParser());
@@ -30,8 +30,7 @@ req.cookie(key,value,{domain,path,expires,maxAge,httpOnly});
 ```
 <!--more-->
 ## session
-```
+```bash
 npm install express-session --save
 let session = require('express-session');
-
 ```
