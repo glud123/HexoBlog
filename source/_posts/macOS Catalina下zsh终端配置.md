@@ -128,7 +128,9 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
 **VS Code 字体配置**
 
 ```bash
-# 进入 设置 -> 功能 -> 终端 -> Integrated: Font Family 配置项 -> Meslo LG S for Powerline -> Integrated: Font Size 配置项 -> 12
+# 进入 设置 -> 功能 -> 终端 
+# Integrated: Font Family 配置项 -> Meslo LG S for Powerline
+# Integrated: Font Size 配置项 -> 12
 ```
 
 最后可能需要重启终端查看效果。
