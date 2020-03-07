@@ -101,8 +101,8 @@ cd ~/.zsh-plugins
 mkdir incr
 # 访问下方地址下载 incr-0.2.zsh 文件
 http://mimosa-pudica.net/src/incr-0.2.zsh
-# 将文件放到 ~/.zsh-pludins/incr 下
-cp 已经下载 incr-0.2.zsh 文件的所在路径 ~/.zsh-pludins/incr 
+# 将文件放到 ~/.zsh-plugins/incr 下
+cp 已经下载 incr-0.2.zsh 文件的所在路径 ~/.zsh-plugins/incr 
 # 修改 zsh 配置文件
 vim .zshrc
 # 文末添加以下配置
