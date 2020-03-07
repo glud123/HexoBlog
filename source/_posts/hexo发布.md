@@ -10,18 +10,18 @@ categories: HEXO
 ## 配置到github
 在_config.yml中找到`deploy`中添加一下内容
 <!--more-->
-```
+```bash
 deploy:
   type: git
   repository: https://github.com/<github用户名>/<github用户名>.github.io.git
   branch: master
 ```
 ## 下载发布插件
-```
+```bash
 npm install hexo-deployer-git --save
 ```
 ## 发布
-```
-hexo g //生成静态页
-hexo d //发布博客
+```bash
+hexo g #生成静态页
+hexo d #发布博客
 ```

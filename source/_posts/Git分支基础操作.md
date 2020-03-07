@@ -5,30 +5,30 @@ tags: [git,前端笔记]
 categories: Git
 ---
 ## 查看当前git分支
-```
+```bash
 git branch
 ```
 ## 创建分支
-```
+```bash
 git branch <分支名>
 ```
 <!--more-->
 ## 切换分支
-```
+```bash
 git checkout <分支名>
 ```
 ## 删除分支
 注：删除分支之前一定确定要删除的分支，不是当前所在分支，切换其他分支之后即可删除
-```
+```bash
 git branch -D <分支名>
 ```
 ## 创建并切换指定分支
-```
+```bash
 git checkout -b <分支名>
 ```
 ## 分支合并 用主干分支合并分支
 注：默认master是主干
-```
+```bash
 git merge <分支名>
 ```
 

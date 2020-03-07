@@ -21,7 +21,7 @@ function fn(){}
 - 2.动态创建script标签
 通过script 标签引用其他网址并且将这个全局函数名字传递给后台
 
-```
+```html
 <script src ="http://localhost:3000/getuser?callback=fn">
 ```
 - 3.后台返回函数执行

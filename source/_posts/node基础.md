@@ -41,7 +41,7 @@ console.log(a(2)(3)); //5
 
 ## setImmediate 不能传递时间
 等待同步代码执行后调用，没有写时间的setTimeout
-```
+```javascript
 setImmediate(function () {
     console.log('setImmediate')
 });
@@ -51,7 +51,7 @@ setTimeout(function () {
 console.log('ok');//默认setTimeout 有可能比 setImmediate 先执行
 ```
 ## process 代码执行时会开一个进程，代码运行完成后进程就结束了
-```
+```javascript
 setInterval(function () {
     //process.pid//当前进程id
      console.log(process.pid);
@@ -59,7 +59,7 @@ setInterval(function () {
      //process.exit();//退出进程
 },1000);
 ```
-```
+```javascript
 process.nextTick(function () {
     console.log('nextTick')
 });//是异步的函数

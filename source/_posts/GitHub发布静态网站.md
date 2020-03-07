@@ -19,6 +19,7 @@ categories: Git
 -在github中的setting页可以查找到网址+文件名即可（默认会展示index.html）
 
 ## 获取自己仓库的代码
-```
+```bash
 git clone <地址>
 ```
+

@@ -11,12 +11,13 @@ categories: node
 util 最主要的功能是继承，判断类型
 >js中的继承call，原型继承，new，extends
 - Obj.create() es5的继承 只继承公有
-```
+```javascript
 Sun.prototype = Obj.create(Parent.prototype)
 ```
 <!--more-->
+
 - Object.setPrototypeOf() es6只继承公有
-```
+```javascript
 Object.setPrototypeOf(Sun.prototype,Parent.prototype);
 ```
 原理Sun.prototype.__proto__ = Parent.prototype

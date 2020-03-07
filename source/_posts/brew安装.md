@@ -10,7 +10,7 @@ categories: 工具
 
 在命令行工具中执行以下命令
 
-```
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
