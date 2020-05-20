@@ -36,6 +36,8 @@ let sentence: strinbg = `你好，${name} !`;
 
 `undefined`和`null`两者有各自的类型分别叫做`undefined`和`null`。
 
+<!--more-->
+
 ```typescript
 let u: undefined = undefined;
 let n: null = null;

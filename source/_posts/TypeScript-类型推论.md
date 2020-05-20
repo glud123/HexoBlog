@@ -31,6 +31,8 @@ let x = [1, 2, null];
 
 由于最终的通用类型取自候选类型，有些时候候选类型共享相同的通用类型，但是却没有一个类型能够作为所有候选类型的类型。
 
+<!--more-->
+
 ```typescript
 let zoo = [new Rhino(), new Elephant(), new Snake()];
 ```
@@ -74,4 +76,3 @@ function createZoo(): Animal[] {
 ```
 
 这个例子里，最佳通用类型有4个候选者：`Animal`，`Rhino`，`Elephant`和`Snake`。 当然， `Animal`会被做为最佳通用类型。
-
