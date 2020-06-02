@@ -136,8 +136,4 @@ Object.defineProperty(Array.prototype, "reduce", {
 
 上方代码就是 `Array.prototype.reduce`的Polyfill的实现。
 
-
-
-
-
 ## 
