@@ -90,7 +90,7 @@ cd .zsh-plugins
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 vim ~/.zshrc
 # 文末添加以下配置
-source ~/.zsh-pludins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 plugins=(zsh-syntax-highlighting)
 
@@ -106,7 +106,7 @@ cp 已经下载 incr-0.2.zsh 文件的所在路径 ~/.zsh-plugins/incr
 # 修改 zsh 配置文件
 vim .zshrc
 # 文末添加以下配置
-source ~/.oh-my-zsh/plugins/incr/incr*.zsh
+source ~/.zsh-plugins/incr/incr*.zsh
 ```
 
 ## 修改各个终端中的字体及字号
